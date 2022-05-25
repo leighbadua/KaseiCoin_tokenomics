@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Original README instructions in Starter Code file
+README_instructions.md

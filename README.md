@@ -15,7 +15,45 @@ The steps for this project are divided into the following sections:
 5. Optional: Extend the Crowdsale Contract by Using OpenZeppelin (included in repo)
 
 
-### Evaluation Evidence
+## Technologies
+This project uses:
++ [Remix - Ethereum IDE](https://remix.ethereum.org/): Used to build and test smart contracts created with Solidity.
++ [Solidity](https://docs.soliditylang.org/en/v0.5.0/introduction-to-smart-contracts.html): Solidity is an object-oriented programming language for implementing smart contracts on various blockchain platforms, most notably, Ethereum.
++ [Ganache](https://trufflesuite.com/ganache/): A program that allows you to quickly set up a local blockchain, which you can use to test and develop smart contracts.
++ [MetaMask](https://metamask.io/download): a digital wallet for the Ethereum blockchain. Browser extension is used with Ganache. 
+
+
+## Usage
+Uses Solidity version: `pragma solidity ^0.5.5`
+
+Open Zeppelin libraries imported in Remix:
+
+```
+KaseiCoin Token is ERC20 compliant:
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Mintable.sol";
+
+Crowdsale:
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol";
+```
+
+## Installation Guide
+Click on the links in the Technologies section for installation documentation. 
+1. Downlaod and install MetaMask browser extension. Set up account. 
+2. Download and install Truffle Suite's Ganache.
+3. Select proper workspace in Ganache by choosing Quickstart, New, or a previously saved Workspace.   
+4. In Remix browser, click on the MetaMask browser extension and set up a Network to Ganache's RPC server.
+5. Import Account in MetaMask by entering your private key with corresponding account address from Ganache. 
+6. Check to ensure that MetaMask is connected and that the amount reflects the account balance in Ganache (shown in image below)
+
+![metamask_edit](https://user-images.githubusercontent.com/96001018/170861684-76f75a9a-4b82-404c-908b-758c96c355be.png)
+
+![ganache_acctaddress](https://user-images.githubusercontent.com/96001018/170861818-042731cd-6d8f-4f3a-9dbe-51f240c040e3.png)
+
+
+## Evaluation Evidence
 
 1. Image showing successful compilation of `KaseiCoin` contract.
 

@@ -12,7 +12,7 @@ The steps for this project are divided into the following sections:
 
 4. Deploy the Crowdsale to a Local Blockchain
 
-5. Optional: Extend the Crowdsale Contract by Using OpenZeppelin
+5. Optional: Extend the Crowdsale Contract by Using OpenZeppelin (included in repo)
 
 
 ### Evaluation Evidence
